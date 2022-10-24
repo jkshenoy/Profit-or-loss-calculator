@@ -32,7 +32,7 @@ p {
   border-radius: 2rem;
 }
 
-#outputtxt {
+.outputtxt {
   color: black;
 }
 
@@ -47,4 +47,20 @@ button {
   height: 40px;
   width: 170px;
   cursor: pointer;
+}
+
+.loss {
+  padding: auto;
+  margin: auto;
+  width: 50vw;
+  color: red;
+  background-color: azure;
+}
+
+.profit {
+  padding: 10px;
+  margin: auto;
+  width: 50vw;
+  color: green;
+  background-color: azure;
 }
