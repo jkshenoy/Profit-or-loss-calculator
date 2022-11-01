@@ -11,15 +11,15 @@ function showResult() {
   var current = Number(currentPrice.value);
   var quantity = Number(totalQuantity.value);
 
-  if (buy < 0 || current < 0 || quantity < 0)
-    result.innerText = 'Input cant be negative! Enter a positive value.';
-  else if (
+  if (
     buyPrice.value === '' ||
     currentPrice.value === '' ||
     totalQuantity.value === ''
   )
-    alert('Please enter all the values to calculate!');
-  else if (buy > current) {
+    result.innerText = 'Please enter all values to proceed!';
+  else if (buy <= 0 || current < 0 || quantity <= 0) {
+    result.innerText = 'Invalid value for price/quantity !';
+  } else if (buy > current) {
     var loss = buy - current;
     var lossAmount = loss * quantity;
     var lossPercent = Math.trunc((loss / buy) * 100);
