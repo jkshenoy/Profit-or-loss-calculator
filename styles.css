@@ -64,3 +64,13 @@ button {
   color: green;
   background-color: azure;
 }
+
+footer {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 140px 0 0;
+}
+
+footer a {
+  text-decoration: none;
+}
