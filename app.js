@@ -17,7 +17,7 @@ function showResult() {
     totalQuantity.value === ''
   )
     result.innerText = 'Please enter all values to proceed!';
-  else if (buy <= 0 || current < 0 || quantity <= 0) {
+  else if (buy <= 0 || current <= 0 || quantity <= 0) {
     result.innerText = 'Invalid value for price/quantity !';
   } else if (buy > current) {
     var loss = buy - current;
